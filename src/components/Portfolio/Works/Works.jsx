@@ -1,4 +1,4 @@
-import classes from './works.module.css';
+import classes from './works.module.scss';
 
 export const Works = ({ images }) => {
 	return (

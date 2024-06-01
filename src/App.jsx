@@ -1,5 +1,5 @@
 import './App.css';
-import { Portfolio } from './components/Portfolio/Main';
+import { Portfolio } from './components/Portfolio';
 
 function App() {
 	const images = [{

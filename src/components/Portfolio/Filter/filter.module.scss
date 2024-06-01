@@ -1,0 +1,30 @@
+@import '../Variables.scss';
+
+.filter {
+	display: flex;
+	gap: 10px;
+
+	.filter-button {
+		border-radius: 0;
+		border: solid 1px $gray;
+		color: $gray;
+		background-color: $white;
+	}
+
+	.filter-button--selected {
+		cursor: default;
+		color: $white !important;
+		background-color: $gray !important;
+	}
+
+	.filter-button:hover {
+		background-color: $gray;
+		color: $white;
+		border: none;
+		outline: none;
+	}
+
+	.filter-button:focus {
+		outline: none;
+	}
+}

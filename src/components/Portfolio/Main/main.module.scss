@@ -1,12 +1,9 @@
-:root {
-	--white: #fff;
-	--gray: #555555;
-}
+@import '../Variables.scss';
 
 .portfolio {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	background-color: var(--white);
+	background-color: $white;
 	padding: 20px;
 }

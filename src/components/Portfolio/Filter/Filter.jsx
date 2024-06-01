@@ -1,4 +1,4 @@
-import classes from './filter.module.css';
+import classes from './filter.module.scss';
 import { useState } from 'react';
 
 export const Filter = ({ filters, onClick, images }) => {
