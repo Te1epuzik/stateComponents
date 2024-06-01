@@ -1,0 +1,12 @@
+:root {
+	--white: #fff;
+	--gray: #555555;
+}
+
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: var(--white);
+	padding: 20px;
+}

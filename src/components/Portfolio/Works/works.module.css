@@ -1,0 +1,15 @@
+.works {
+	box-sizing: border-box;
+	margin-top: 20px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	aspect-ratio: 9 / 17;
+	gap: 1vw;
+	width: 100%;
+}
+
+.works__img {
+	width: 30%;
+}
