@@ -3,22 +3,18 @@ import classes from './iconSwitch.module.scss';
 export const IconSwitch = ({ viewVariant, onSwitch }) => {
 
 
-	const handleSwicthView = event => {
-
-		if (event.target.getAttribute('data-view') === 'module') {
-			event.target.setAttribute('data-view', 'list');
+	const handleSwicthView = viewVariant => {
+		if (viewVariant === 'module') {
+			onSwitch('list');
 		} else {
-			event.target.setAttribute('data-view', 'module');
+			onSwitch('module');
 		}
-
-		onSwitch(event.target.getAttribute('data-view'));
 	};
 
 	return (
 		<div
 			className={classes['icon-switch'] + ' ' + 'material-icons'}
-			onClick={handleSwicthView}
-			data-view='module'>
+			onClick={() => handleSwicthView(viewVariant)}>
 				{viewVariant === 'module' ? 'view_list' : 'view_module'}
 			</div>
 	)

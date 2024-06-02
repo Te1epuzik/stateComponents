@@ -6,13 +6,8 @@ export const Filter = ({ filters, onClick, images }) => {
 	const parsedImages = [];
 	const [selectedFilter, setSelectorFilter] = useState(0);
 
-	const handleFilterSelect = event => {
-		if (!event.target.closest('button') || event.target.className.includes('filter-button--selected')) {
-			return;
-		}
-
+	const handleFilterSelect = currentId => {
 		parsedImages.splice(0, parsedImages.length);
-		const currentId = +event.target.getAttribute('id');
 
 		if (currentId === 0) {
 			images.forEach((image, index) => {
@@ -32,9 +27,10 @@ export const Filter = ({ filters, onClick, images }) => {
 	}
 
 	return (
-		<div className={classes['filter']} onClick={handleFilterSelect}>
+		<div className={classes['filter']}>
 			{filters.map(filter =>
 				<button
+					onClick={() => handleFilterSelect(filter.id)}
 					key={filter.id}
 					className={selectedFilter === filter.id ?
 						classes['filter-button'] + ' ' + classes['filter-button--selected'] :

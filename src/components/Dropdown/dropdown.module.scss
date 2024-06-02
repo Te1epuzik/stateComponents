@@ -1,6 +1,9 @@
 @import './Variables.scss';
 
 .dropdown {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
 	background-color: $color-white;
 	min-width: 840px;
 	height: 600px;
@@ -9,6 +12,8 @@
 	box-sizing: border-box;
 
 	.dropdown__button {
+		position: relative;
+		z-index: 1;
 		border-radius: 4px;
 		border: none;
 		background-color: $color-blue;
