@@ -1,5 +1,6 @@
-import './App.css';
+import './App.scss';
 import { Portfolio } from './components/Portfolio';
+import { Store } from './components/Store';
 
 function App() {
 	const images = [{
@@ -65,6 +66,7 @@ function App() {
   return (
     <>
       <Portfolio images={images} filters={filters} />
+			<Store />
     </>
   )
 }

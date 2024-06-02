@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import classes from './main.module.scss';
-import { Filter } from '../Filter';
-import { Works } from '../Works';
+import classes from './portfolio.module.scss';
+import { Filter } from './Filter';
+import { Works } from './Works';
 
 export const Portfolio = ({ images, filters }) => {
 

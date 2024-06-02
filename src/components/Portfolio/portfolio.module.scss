@@ -1,9 +1,9 @@
-@import '../Variables.scss';
+@import './Variables.scss';
 
 .portfolio {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: fit-content;
 	background-color: $white;
 	padding: 20px;
 }
